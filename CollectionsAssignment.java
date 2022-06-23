@@ -3,6 +3,7 @@ package com.revature.assignment;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -37,6 +38,9 @@ public static void main(String[] args) {
 //	Collections.rotate(myList, 2);
 //	System.out.println(myList);
 
-	
+	Iterator myListItr=myList.iterator();
+	while(myListItr.hasNext())
+		System.out.print(myListItr.next()+" & ");
+	System.out.println(); 
 }
 }
